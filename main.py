@@ -41,7 +41,26 @@ def main():
             Type a number that is in the range (1-1000)
                    To validate if it is odd or even
             """
-        ).grid(column=4, row=1)
+        ).grid(column=2, row=1)
+
+        lb_response = tk.Label(
+
+            raiz,
+            text="Response"
+        ).grid(column=3, row=3)
+
+        text_box = tk.Entry(
+
+            raiz,
+            justify= tk.CENTER
+
+        ).grid(column=3, row=2)
+
+        button_check = tk.Button(
+
+            raiz,
+            text="CHECK"
+        ).grid(column=1, row=2)
 
         raiz.mainloop()
 
